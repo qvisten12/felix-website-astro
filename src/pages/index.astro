@@ -1,0 +1,94 @@
+---
+import BaseHead from '../components/BaseHead.astro'
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
+import { SITE_TITLE, SITE_DESCRIPTION } from '../config'
+import Card from '../components/Card.astro'
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <div class="intro-wrapper">
+        <h2>Hi, I'm Felix</h2>
+        <h1>I help produce amazing systems and create inclusive experiences 🚀</h1>
+        <h3>Right now, I&apos;m inventing new ways to make work meaningful at <span>Motorit</span>.</h3>
+      </div>
+      <div class="card-container">
+        <Card primaryText="Bilia" secondaryText="Branches" description="A complete revamp of Bilia's branch search layout." backgroundColor="rgb(205,225,179)" imageUrl="/anlaggningar.png" />
+        <Card
+          primaryText="Personal Project"
+          secondaryText="HackerScroller Clone"
+          description="A redesign of hackerscroller, with a new slimer and more modern look."
+          imageUrl="/hackerscroller-preview.png"
+          backgroundColor="#B4E7FC"
+        />
+        <Card primaryText="Personal Project" secondaryText="Yutu Weather" description="A weather app, designed to be easy and fast." backgroundColor="#ece3d3" imageUrl="/yutu-preview.png" />
+      </div>
+    </main>
+    <Footer />
+    <style lang="scss">
+      main {
+        margin-top: 0.5em;
+      }
+      .intro-wrapper {
+        margin-bottom: 3.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+
+        @media (min-width: 768px) {
+          margin-bottom: 8rem /* 128px */;
+        }
+
+        h2 {
+          font-size: 1.125rem /* 18px */;
+          line-height: 1.75rem /* 28px */;
+          text-transform: uppercase;
+          color: rgb(107 114 128);
+          font-family: 'SFBold', sans-serif;
+        }
+
+        h1 {
+          font-size: 1.5rem /* 24px */;
+          line-height: 2rem /* 32px */;
+          font-family: 'SFBold', sans-serif;
+
+          @media (min-width: 768px) {
+            font-size: 2.25rem /* 36px */;
+            line-height: 2.5rem /* 40px */;
+          }
+
+          @media (min-width: 1024px) {
+            font-size: 3.75rem /* 60px */;
+            line-height: 1;
+          }
+        }
+
+        h3 {
+          font-size: 1.125rem /* 18px */;
+          font-family: 'AkkuratLight', sans-serif;
+
+          @media (min-width: 768px) {
+            font-size: 1.25rem /* 20px */;
+            line-height: 1.75rem /* 28px */;
+          }
+
+          span {
+            color: rgb(37 99 235);
+          }
+        }
+      }
+      .card-container {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+      }
+    </style>
+  </body>
+</html>
