@@ -1,7 +1,7 @@
 ---
 interface Props {
   primaryText: string
-  secondaryText?: string
+  secondaryText: string
   description?: string
   href?: string
   imageUrl: string
@@ -17,10 +17,10 @@ const { ...Props } = Astro.props
     <h4>{Props.primaryText}</h4>
     <h3>{Props.secondaryText}</h3>
     <p>{Props.description}</p>
-    <a href={Props.href}> Read More</a>
+    <a rel="prefetch" href={Props.href}> Read More</a>
   </div>
   <div style={{ backgroundColor: `${Props.backgroundColor}` }} class="card-image">
-    <a href={Props.href}>
+    <a rel="prefetch" href={Props.href}>
       <img src={Props.imageUrl} alt={Props.secondaryText} />
     </a>
   </div>

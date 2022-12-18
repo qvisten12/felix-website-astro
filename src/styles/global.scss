@@ -103,20 +103,20 @@ blockquote {
 
 @font-face {
   font-family: 'AkkuratLight';
-  src: url('fonts/AkkuratLight.otf') format('otf');
+  src: local(''), url('/fonts/AkkuratLight.woff') format('woff');
 }
 
 @font-face {
   font-family: 'AkkuratNormal';
-  src: url('fonts/AkkuratNormal.otf') format('otf');
+  src: local(''), url('/fonts/AkkuratNormal.woff') format('woff');
 }
 
 @font-face {
   font-family: 'SFBold';
-  src: url('fonts/SFBOLD.otf') format('otf');
+  src: local(''), url('/fonts/SFBOLD.woff') format('woff');
 }
 
 @font-face {
   font-family: 'SFRegular';
-  src: url('fonts/SFREGULAR.otf') format('otf');
+  src: local(''), url('/fonts/SFREGULAR.woff') format('woff');
 }

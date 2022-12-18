@@ -12,10 +12,12 @@
   },
   "dependencies": {
     "@astrojs/mdx": "^0.13.0",
+    "@astrojs/prefetch": "^0.1.1",
     "@astrojs/rss": "^1.2.1",
     "@astrojs/sitemap": "^1.0.0",
     "@astrojs/vercel": "^2.3.6",
     "astro": "^1.7.1",
+    "astro-compress": "^1.1.23",
     "sass": "^1.57.0"
   }
 }
