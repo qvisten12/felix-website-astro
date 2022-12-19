@@ -4,9 +4,6 @@ import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
 import { SITE_TITLE, SITE_DESCRIPTION } from '../config'
 import Card from '../components/Card.astro'
-import anlaggningar from '../assets/anlaggningar.png'
-import hackerscroller from '../assets/hackerscroller.png'
-import yutu from '../assets/yutu.png'
 ---
 
 <!DOCTYPE html>
@@ -23,16 +20,23 @@ import yutu from '../assets/yutu.png'
         <h3>Right now, I&apos;m inventing new ways to make work meaningful at <span>Motorit</span>.</h3>
       </div>
       <div class="card-container">
-        <Card primaryText="Bilia" secondaryText="Branches" description="A complete revamp of Bilia's branch search layout." href="/about" backgroundColor="rgb(205,225,179)" imageUrl={anlaggningar} />
+        <Card
+          primaryText="Bilia"
+          secondaryText="Branches"
+          description="A complete revamp of Bilia's branch search layout."
+          href="/about"
+          backgroundColor="rgb(205,225,179)"
+          imageUrl="/anlaggningar.webp"
+        />
         <Card
           primaryText="Personal Project"
           secondaryText="HackerScroller Clone"
           href="/about"
           description="A redesign of hackerscroller, with a new slimer and more modern look."
-          imageUrl={hackerscroller}
+          imageUrl="/hackerscroller.webp"
           backgroundColor="#B4E7FC"
         />
-        <Card primaryText="Personal Project" secondaryText="Yutu Weather" href="/about" description="A weather app, designed to be easy and fast." backgroundColor="#ece3d3" imageUrl={yutu} />
+        <Card primaryText="Personal Project" secondaryText="Yutu Weather" href="/about" description="A weather app, designed to be easy and fast." backgroundColor="#ece3d3" imageUrl="/yutu.webp" />
       </div>
     </main>
     <Footer />

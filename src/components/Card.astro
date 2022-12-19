@@ -1,6 +1,4 @@
 ---
-import { Image } from '@astrojs/image/components'
-
 interface Props {
   primaryText: string
   secondaryText: string
@@ -22,7 +20,7 @@ const { ...Props } = Astro.props
   </div>
   <div style={{ backgroundColor: `${Props.backgroundColor}` }} class="card-image">
     <a rel="prefetch" href={Props.href}>
-      <Image src={Props.imageUrl} alt={Props.secondaryText} aspectRatio="16:9" />
+      <img src={Props.imageUrl} alt={Props.secondaryText} />
     </a>
   </div>
 </div>
